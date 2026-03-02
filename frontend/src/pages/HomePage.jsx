@@ -34,7 +34,7 @@ const API = `${BACKEND_URL}/api`;
 // WhatsApp Button Component
 const WhatsAppButton = () => (
   <a 
-    href="https://wa.me/917550000000" 
+    href="https://wa.me/918770828302" 
     target="_blank" 
     rel="noopener noreferrer"
     className="whatsapp-btn"
@@ -497,7 +497,7 @@ const HomePage = () => {
                 Contact Us <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
-            <a href="tel:+917550000000">
+            <a href="tel:+918770828302">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 gap-2">
                 <Phone className="w-4 h-4" /> Call Now
               </Button>

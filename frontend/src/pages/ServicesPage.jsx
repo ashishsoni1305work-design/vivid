@@ -222,7 +222,7 @@ const ServicesPage = () => {
             Our technical team is available to help you with installation, maintenance, or any service queries.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:+917550000000">
+            <a href="tel:+918770828302">
               <Button size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white gap-2">
                 <Phone className="w-4 h-4" /> Call Us Now
               </Button>

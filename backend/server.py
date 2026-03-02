@@ -84,9 +84,9 @@ class CompanyInfo(BaseModel):
     name: str = "Vivid H2O Solutions"
     tagline: str = "Pure Water, Pure Life"
     description: str = "Leading manufacturer and supplier of industrial water treatment solutions since 2014"
-    address: str = "09, Kundan Nagar, Baghmugalya, Bhopal - 402026, Madhya Pradesh, India"
-    phone: str = "+91-755-XXXXXXX"
-    email: str = "info@vividh2osolutions.com"
+    address: str = "C-125, Vidhya Nagar, Hoshangabad Road, Bhopal - 462026, Madhya Pradesh, India"
+    phone: str = "+91-8770828302"
+    email: str = "vividh2osolutions@gi.com"
     gst: str = "23CCQPS3136K1Z7"
     established: int = 2014
     proprietor: str = "Ashish Soni"

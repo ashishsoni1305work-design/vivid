@@ -97,24 +97,24 @@ const Footer = () => {
                   <MapPin className="w-5 h-5 text-cyan-300" />
                 </div>
                 <span className="text-blue-100 text-sm">
-                  09, Kundan Nagar, Baghmugalya,<br />
-                  Bhopal - 402026, MP, India
+                  C-125, Vidhya Nagar,<br />
+                  Hoshangabad Road, Bhopal - 462026
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5 text-cyan-300" />
                 </div>
-                <a href="tel:+917550000000" className="text-blue-100 text-sm hover:text-white transition-colors">
-                  +91-755-XXXXXXX
+                <a href="tel:+918770828302" className="text-blue-100 text-sm hover:text-white transition-colors">
+                  +91-8770828302
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Mail className="w-5 h-5 text-cyan-300" />
                 </div>
-                <a href="mailto:info@vividh2osolutions.com" className="text-blue-100 text-sm hover:text-white transition-colors">
-                  info@vividh2osolutions.com
+                <a href="mailto:vividh2osolutions@gi.com" className="text-blue-100 text-sm hover:text-white transition-colors">
+                  vividh2osolutions@gi.com
                 </a>
               </li>
               <li className="flex items-center gap-3">

@@ -75,19 +75,19 @@ const ContactPage = () => {
     {
       icon: MapPin,
       title: "Our Office",
-      details: ["09, Kundan Nagar, Baghmugalya", "Bhopal - 402026, MP, India"],
+      details: ["C-125, Vidhya Nagar", "Hoshangabad Road, Bhopal - 462026"],
       color: "bg-blue-500"
     },
     {
       icon: Phone,
       title: "Phone",
-      details: ["+91-755-XXXXXXX"],
+      details: ["+91-8770828302"],
       color: "bg-green-500"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@vividh2osolutions.com", "sales@vividh2osolutions.com"],
+      details: ["vividh2osolutions@gi.com"],
       color: "bg-purple-500"
     },
     {
@@ -306,14 +306,14 @@ const ContactPage = () => {
               <Card className="border-0 shadow-xl overflow-hidden" data-testid="contact-map">
                 <div className="aspect-video">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.8307689774966!2d77.4126!3d23.2599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE1JzM1LjYiTiA3N8KwMjQnNDUuNCJF!5e0!3m2!1sen!2sin!4v1635000000000!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5!2d77.45!3d23.27!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zVmlkeWEgTmFnYXIsIEhvc2hhbmdhYmFkIFJvYWQsIEJob3BhbA!5e0!3m2!1sen!2sin!4v1635000000000!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Vivid H2O Solutions Location"
+                    title="Vivid H2O Solutions - C-125 Vidhya Nagar, Hoshangabad Road, Bhopal"
                   />
                 </div>
               </Card>
@@ -331,7 +331,7 @@ const ContactPage = () => {
                     <p className="text-green-100 text-sm">Quick response guaranteed</p>
                   </div>
                   <a 
-                    href="https://wa.me/917550000000" 
+                    href="https://wa.me/918770828302" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-white text-green-600 px-4 py-2 rounded-lg font-semibold hover:bg-green-50 transition-colors"

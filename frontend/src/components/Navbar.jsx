@@ -36,18 +36,18 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center gap-6">
-              <a href="tel:+917550000000" className="flex items-center gap-2 hover:text-cyan-300 transition-colors">
+              <a href="tel:+918770828302" className="flex items-center gap-2 hover:text-cyan-300 transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>+91-755-XXXXXXX</span>
+                <span>+91-8770828302</span>
               </a>
-              <a href="mailto:info@vividh2osolutions.com" className="flex items-center gap-2 hover:text-cyan-300 transition-colors">
+              <a href="mailto:vividh2osolutions@gi.com" className="flex items-center gap-2 hover:text-cyan-300 transition-colors">
                 <Mail className="w-4 h-4" />
-                <span>info@vividh2osolutions.com</span>
+                <span>vividh2osolutions@gi.com</span>
               </a>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>Bhopal - 402026, MP, India</span>
+              <span>C-125, Vidhya Nagar, Hoshangabad Road, Bhopal</span>
             </div>
           </div>
         </div>
@@ -130,13 +130,13 @@ const Navbar = () => {
                   </Link>
                 ))}
                 <div className="px-4 py-3 space-y-2 border-t border-gray-100 mt-2">
-                  <a href="tel:+917550000000" className="flex items-center gap-2 text-sm text-gray-600">
+                  <a href="tel:+918770828302" className="flex items-center gap-2 text-sm text-gray-600">
                     <Phone className="w-4 h-4 text-[#0d47a1]" />
-                    +91-755-XXXXXXX
+                    +91-8770828302
                   </a>
-                  <a href="mailto:info@vividh2osolutions.com" className="flex items-center gap-2 text-sm text-gray-600">
+                  <a href="mailto:vividh2osolutions@gi.com" className="flex items-center gap-2 text-sm text-gray-600">
                     <Mail className="w-4 h-4 text-[#0d47a1]" />
-                    info@vividh2osolutions.com
+                    vividh2osolutions@gi.com
                   </a>
                 </div>
                 <Link to="/contact" onClick={() => setIsOpen(false)} className="mx-4 mt-2">
