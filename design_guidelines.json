@@ -1,0 +1,146 @@
+{
+  "project_name": "Vivid H2O Solutions",
+  "theme": "light",
+  "design_philosophy": {
+    "persona": "E1: The Anti-AI Designer",
+    "core_concept": "The Deep Blue Industrialist",
+    "description": "A fusion of heavy industrial reliability and the purity of water. High contrast between stainless steel greys and deep ocean blues. It avoids the generic 'corporate blue' by using deeper, richer tones and high-tech mono/geometric typography.",
+    "emotional_tone": "Trust, Technical Precision, Industrial Power, Cleanliness",
+    "forbidden_elements": [
+      "Generic Teal (#1B93A4)",
+      "Purple",
+      "Gradient Overload",
+      "Centered Everything",
+      "AI Emoji Icons"
+    ]
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["600", "800"],
+      "description": "Modern, geometric, semi-industrial. Use tight tracking for large headers.",
+      "install_command": "yarn add @fontsource/manrope"
+    },
+    "body": {
+      "font_family": "Public Sans, sans-serif",
+      "weights": ["400", "500"],
+      "description": "Clean, neutral, government-grade legibility.",
+      "install_command": "yarn add @fontsource/public-sans"
+    },
+    "mono": {
+      "font_family": "JetBrains Mono, monospace",
+      "description": "For technical specs and data points.",
+      "install_command": "yarn add @fontsource/jetbrains-mono"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#0F172A",
+      "primary_foreground": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "accent": "#06B6D4",
+      "accent_foreground": "#FFFFFF",
+      "background": "#FFFFFF",
+      "surface": "#F1F5F9",
+      "muted": "#E2E8F0",
+      "border": "#CBD5E1"
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.9) 100%)",
+      "glass_surface": "rgba(255, 255, 255, 0.7)"
+    }
+  },
+  "layout_strategy": {
+    "spacing": "Generous. Use p-8, p-16, p-24. Avoid cramped p-4.",
+    "container_padding": "p-6 or p-8 for bordered containers.",
+    "grid_system": "Bento Grid (Asymmetric). Never equal squares for main content.",
+    "alignment": "Left-aligned for text. Asymmetric for layout. Optical alignment for icons."
+  },
+  "components": {
+    "buttons": {
+      "style": "Sharp edges or minimal rounded-md. No pill shapes for industrial look.",
+      "hover": "High contrast lift. scale-105.",
+      "variants": ["solid-primary", "outline-heavy", "ghost-accent"]
+    },
+    "cards": {
+      "style": "Flat, 1px border (slate-200), no shadow by default. Shadow-lg on hover.",
+      "content": "Must include technical specs in mono font."
+    },
+    "navigation": {
+      "style": "Sticky, Glassmorphism (Backdrop blur-xl). Solid bottom border 1px."
+    },
+    "forms": {
+      "library": "Shadcn UI",
+      "style": "Clean, high contrast borders. Focus rings must be sharp."
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Subtle noise overlay on dark sections (Footer, Hero).",
+    "glassmorphism": "Used for overlays, toasts, and sticky headers. Backdrop-blur-xl.",
+    "motion": {
+      "library": "Framer Motion",
+      "defaults": {
+        "duration": 0.4,
+        "ease": "easeOut"
+      },
+      "scroll": "Parallax for hero images. Staggered entrance for product grids."
+    },
+    "icons": {
+      "library": "Lucide React",
+      "style": "Stroke width 1.5px. Crisp and technical."
+    }
+  },
+  "images": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1675093022653-59233299f8ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmV2ZXJzZSUyMG9zbW9zaXMlMjBwbGFudCUyMG1hY2hpbmVyeSUyMGZhY3Rvcnl8ZW58MHx8fHwxNzcyNDgxNzc2fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Industrial Water Plant Facility",
+      "description": "Hero background. Darken with overlay."
+    },
+    "quality_abstract": {
+      "url": "https://images.unsplash.com/photo-1660303438028-b59af33c618c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxjbGVhbiUyMGZyZXNoJTIwd2F0ZXIlMjByaXBwbGUlMjBnbGFzcyUyMHNwbGFzaCUyMGhpZ2glMjBxdWFsaXR5fGVufDB8fHx8MTc3MjQ4MTc3N3ww&ixlib=rb-4.1.0&q=85",
+      "alt": "Crystal clear water glass",
+      "description": "Use for 'Purity Promise' or Quality Assurance section."
+    },
+    "engineer": {
+      "url": "https://images.unsplash.com/photo-1735494032948-14ef288fc9d3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZW5naW5lZXIlMjBzYWZldHklMjBoZWxtZXQlMjB0YWJsZXQlMjBmYWN0b3J5JTIwZmxvb3J8ZW58MHx8fHwxNzcyNDgxNzg4fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Industrial Engineer",
+      "description": "Services or About Us section."
+    },
+    "team": {
+      "url": "https://images.unsplash.com/flagged/photo-1576485436509-a7d286952b65?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBtZWV0aW5nJTIwbW9kZXJuJTIwb2ZmaWNlJTIwZGl2ZXJzZSUyMHRlYW0lMjBpbmRpYXxlbnwwfHx8fDE3NzI0ODE3ODl8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Corporate Team Meeting",
+      "description": "About Us / Contact section."
+    },
+    "product_tank": {
+      "url": "https://images.unsplash.com/photo-1721673677295-180bbac0ca32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc3RhaW5sZXNzJTIwc3RlZWwlMjB3YXRlciUyMHRhbmslMjBmYWN0b3J5fGVufDB8fHx8MTc3MjQ4MTc4N3ww&ixlib=rb-4.1.0&q=85",
+      "alt": "Industrial Tank",
+      "description": "Product catalog placeholder."
+    }
+  },
+  "pages": {
+    "home": {
+      "sections": ["Hero (Immersive)", "Trusted By (Logos)", "Bento Grid Products", "Technical Services", "Testimonials"]
+    },
+    "products": {
+      "layout": "Sidebar Filter + Grid",
+      "card_style": "Minimalist, Photo-heavy, Tech specs visible"
+    },
+    "contact": {
+      "layout": "Split Screen (Map + Form)",
+      "map_style": "Grayscale/Muted custom map style"
+    }
+  },
+  "accessibility": {
+    "contrast": "APCA Compliant. Dark text on light bg, White text on dark bg.",
+    "focus": "Visible focus rings (2px offset).",
+    "aria": "All interactive elements must have aria-labels."
+  },
+  "universal_guidelines": [
+    "Do not use gradients for text.",
+    "Do not center align the app container.",
+    "Use 'sonner' for toasts.",
+    "Use 'data-testid' for all interactive elements.",
+    "Mobile images max-h-[80vh].",
+    "Avoid generic 'water drop' icons. Use abstract geometric shapes."
+  ]
+}
