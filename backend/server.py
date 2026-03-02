@@ -86,7 +86,7 @@ class CompanyInfo(BaseModel):
     description: str = "Leading manufacturer and supplier of industrial water treatment solutions since 2014"
     address: str = "C-125, Vidhya Nagar, Hoshangabad Road, Bhopal - 462026, Madhya Pradesh, India"
     phone: str = "+91-8770828302"
-    email: str = "vividh2osolutions@gi.com"
+    email: str = "vividh2osolutions@gmail.com"
     gst: str = "23CCQPS3136K1Z7"
     established: int = 2014
     proprietor: str = "Ashish Soni"

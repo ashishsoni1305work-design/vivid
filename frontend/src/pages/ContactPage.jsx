@@ -87,7 +87,7 @@ const ContactPage = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["vividh2osolutions@gi.com"],
+      details: ["vividh2osolutions@gmail.com"],
       color: "bg-purple-500"
     },
     {

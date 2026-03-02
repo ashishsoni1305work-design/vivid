@@ -40,9 +40,9 @@ const Navbar = () => {
                 <Phone className="w-4 h-4" />
                 <span>+91-8770828302</span>
               </a>
-              <a href="mailto:vividh2osolutions@gi.com" className="flex items-center gap-2 hover:text-cyan-300 transition-colors">
+              <a href="mailto:vividh2osolutions@gmail.com" className="flex items-center gap-2 hover:text-cyan-300 transition-colors">
                 <Mail className="w-4 h-4" />
-                <span>vividh2osolutions@gi.com</span>
+                <span>vividh2osolutions@gmail.com</span>
               </a>
             </div>
             <div className="flex items-center gap-2">
@@ -134,9 +134,9 @@ const Navbar = () => {
                     <Phone className="w-4 h-4 text-[#0d47a1]" />
                     +91-8770828302
                   </a>
-                  <a href="mailto:vividh2osolutions@gi.com" className="flex items-center gap-2 text-sm text-gray-600">
+                  <a href="mailto:vividh2osolutions@gmail.com" className="flex items-center gap-2 text-sm text-gray-600">
                     <Mail className="w-4 h-4 text-[#0d47a1]" />
-                    vividh2osolutions@gi.com
+                    vividh2osolutions@gmail.com
                   </a>
                 </div>
                 <Link to="/contact" onClick={() => setIsOpen(false)} className="mx-4 mt-2">
