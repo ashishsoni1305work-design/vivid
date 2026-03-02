@@ -10,7 +10,10 @@ import {
   TrendingUp,
   ArrowRight,
   CheckCircle,
-  Phone
+  Phone,
+  Settings,
+  Truck,
+  Shield
 } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
@@ -44,27 +47,27 @@ const ServicesPage = () => {
     fetchServices();
   }, []);
 
-  const processSteps = [
-    { step: "01", title: "Site Assessment", description: "Our experts visit your location to understand your water treatment requirements" },
-    { step: "02", title: "Custom Solution", description: "We design a tailored solution based on your water quality and capacity needs" },
-    { step: "03", title: "Installation", description: "Professional installation with proper civil, electrical, and plumbing work" },
-    { step: "04", title: "Commissioning", description: "System testing, optimization, and operator training for smooth operation" }
+  const whyChooseUs = [
+    { icon: Shield, title: "Quality Assurance", description: "ISO certified processes" },
+    { icon: Truck, title: "Timely Delivery", description: "On-time project completion" },
+    { icon: Settings, title: "Expert Team", description: "Skilled technicians" },
+    { icon: Phone, title: "24/7 Support", description: "Round the clock assistance" }
   ];
 
   return (
-    <div className="services-page min-h-screen bg-white" data-testid="services-page">
-      {/* Header */}
-      <section className="bg-slate-50 py-16 border-b border-slate-200">
+    <div className="services-page min-h-screen bg-gray-50" data-testid="services-page">
+      {/* Hero Header */}
+      <section className="bg-gradient-to-r from-[#0d47a1] to-[#1976d2] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            className="text-center"
           >
-            <span className="text-cyan-600 text-sm font-semibold tracking-wider uppercase">Our Services</span>
-            <h1 className="font-heading font-bold text-3xl lg:text-4xl text-[#0f172a] mt-2 mb-4">
-              Complete Water Treatment Services
+            <h1 className="font-heading font-bold text-3xl lg:text-4xl text-white mb-4">
+              Our Services
             </h1>
-            <p className="text-slate-600 max-w-2xl">
+            <p className="text-blue-100 max-w-2xl mx-auto">
               From installation to maintenance, we provide end-to-end services to keep your 
               water treatment systems running at peak performance.
             </p>
@@ -73,11 +76,11 @@ const ServicesPage = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {loading ? (
             <div className="flex justify-center py-20">
-              <div className="spinner"></div>
+              <div className="w-12 h-12 border-4 border-[#0d47a1] border-t-transparent rounded-full animate-spin"></div>
             </div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="services-grid">
@@ -91,22 +94,29 @@ const ServicesPage = () => {
                     transition={{ delay: index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <Card className="h-full border-slate-200 hover:border-cyan-200 transition-colors" data-testid={`service-${service.slug}`}>
+                    <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden group" data-testid={`service-${service.slug}`}>
+                      <div className="h-48 overflow-hidden">
+                        <img 
+                          src={service.image_url} 
+                          alt={service.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
                       <CardContent className="p-6">
-                        <div className="w-14 h-14 bg-cyan-50 rounded-xl flex items-center justify-center mb-6">
-                          <IconComponent className="w-7 h-7 text-cyan-600" />
+                        <div className="w-14 h-14 bg-gradient-to-br from-[#0d47a1] to-[#1976d2] rounded-xl flex items-center justify-center mb-4 -mt-12 relative shadow-lg">
+                          <IconComponent className="w-7 h-7 text-white" />
                         </div>
-                        <h3 className="font-heading font-semibold text-xl text-[#0f172a] mb-3">
+                        <h3 className="font-heading font-semibold text-xl text-gray-900 mb-3">
                           {service.name}
                         </h3>
-                        <p className="text-slate-600 text-sm mb-6 leading-relaxed">
-                          {service.description}
+                        <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                          {service.short_description}
                         </p>
                         <ul className="space-y-2">
-                          {service.features.slice(0, 4).map((feature, idx) => (
+                          {service.features.slice(0, 3).map((feature, idx) => (
                             <li key={idx} className="flex items-center gap-2 text-sm">
-                              <CheckCircle className="w-4 h-4 text-cyan-500 flex-shrink-0" />
-                              <span className="text-slate-700">{feature}</span>
+                              <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                              <span className="text-gray-700">{feature}</span>
                             </li>
                           ))}
                         </ul>
@@ -120,38 +130,27 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 bg-slate-50" data-testid="process-section">
+      {/* Why Choose Us */}
+      <section className="py-16 bg-white" data-testid="why-choose-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-cyan-600 text-sm font-semibold tracking-wider uppercase">Our Process</span>
-            <h2 className="font-heading font-bold text-3xl lg:text-4xl text-[#0f172a] mt-2">
-              How We Work
-            </h2>
+          <div className="text-center mb-12">
+            <h2 className="font-heading font-bold text-3xl text-gray-900">Why Choose Our Services</h2>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((item, index) => (
+          <div className="grid md:grid-cols-4 gap-8">
+            {whyChooseUs.map((item, index) => (
               <motion.div
-                key={item.step}
+                key={item.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="relative"
+                className="text-center"
               >
-                <div className="text-6xl font-heading font-extrabold text-cyan-100 mb-4">
-                  {item.step}
+                <div className="w-16 h-16 bg-gradient-to-br from-[#0d47a1] to-[#1976d2] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <item.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="font-heading font-semibold text-lg text-[#0f172a] mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-slate-600 text-sm">
-                  {item.description}
-                </p>
-                {index < processSteps.length - 1 && (
-                  <ArrowRight className="hidden lg:block absolute top-8 -right-4 w-8 h-8 text-slate-300" />
-                )}
+                <h3 className="font-heading font-semibold text-lg text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -159,7 +158,7 @@ const ServicesPage = () => {
       </section>
 
       {/* AMC Highlight */}
-      <section className="py-20 bg-white" data-testid="amc-section">
+      <section className="py-16 bg-gray-50" data-testid="amc-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -168,9 +167,9 @@ const ServicesPage = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1735494032948-14ef288fc9d3?w=800"
+                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800"
                 alt="Service Engineer"
-                className="rounded-xl shadow-lg"
+                className="rounded-xl shadow-2xl"
               />
             </motion.div>
             <motion.div
@@ -178,14 +177,14 @@ const ServicesPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-cyan-600 text-sm font-semibold tracking-wider uppercase">Annual Maintenance</span>
-              <h2 className="font-heading font-bold text-3xl text-[#0f172a] mt-2 mb-6">
+              <div className="section-title-icon"></div>
+              <span className="text-[#0d47a1] text-sm font-semibold tracking-wider uppercase">Annual Maintenance</span>
+              <h2 className="font-heading font-bold text-3xl text-gray-900 mt-2 mb-6">
                 Keep Your Systems Running Smoothly
               </h2>
-              <p className="text-slate-600 mb-6">
+              <p className="text-gray-600 mb-6">
                 Our comprehensive Annual Maintenance Contract (AMC) ensures your water treatment 
-                plants operate at peak efficiency year-round. Preventive maintenance saves you 
-                from costly breakdowns and extends equipment life.
+                plants operate at peak efficiency year-round.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
@@ -193,16 +192,18 @@ const ServicesPage = () => {
                   "Priority emergency response",
                   "Discounted spare parts",
                   "Performance optimization",
-                  "Compliance documentation support"
+                  "Compliance documentation"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-cyan-500 flex-shrink-0" />
-                    <span className="text-slate-700">{item}</span>
+                    <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                      <CheckCircle className="w-4 h-4 text-green-600" />
+                    </div>
+                    <span className="text-gray-700">{item}</span>
                   </li>
                 ))}
               </ul>
               <Link to="/contact">
-                <Button className="bg-[#0f172a] hover:bg-[#1e293b] gap-2" data-testid="amc-enquiry-btn">
+                <Button className="bg-[#0d47a1] hover:bg-[#0a3d8f] gap-2" data-testid="amc-enquiry-btn">
                   Enquire About AMC <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
@@ -212,12 +213,12 @@ const ServicesPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#0f172a] relative noise-overlay" data-testid="services-cta">
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-16 bg-gradient-to-r from-[#0d47a1] to-[#1976d2]" data-testid="services-cta">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading font-bold text-3xl text-white mb-4">
             Need Service Support?
           </h2>
-          <p className="text-slate-300 mb-8">
+          <p className="text-blue-100 mb-8">
             Our technical team is available to help you with installation, maintenance, or any service queries.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -227,7 +228,7 @@ const ServicesPage = () => {
               </Button>
             </a>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="border-slate-400 text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 Send Inquiry
               </Button>
             </Link>

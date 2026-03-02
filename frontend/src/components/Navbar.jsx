@@ -1,17 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Droplets, Phone } from "lucide-react";
+import { Menu, X, Droplets, Phone, Mail, MapPin, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Products", path: "/products" },
     { name: "Services", path: "/services" },
-    { name: "About", path: "/about" },
+    { name: "About Us", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -21,90 +30,126 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 glass border-b border-slate-200" data-testid="navbar">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2" data-testid="logo">
-            <div className="w-10 h-10 bg-[#0f172a] rounded-md flex items-center justify-center">
-              <Droplets className="w-6 h-6 text-cyan-400" />
+    <>
+      {/* Top Bar */}
+      <div className="top-bar text-white py-2 hidden lg:block" data-testid="top-bar">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between text-sm">
+            <div className="flex items-center gap-6">
+              <a href="tel:+917550000000" className="flex items-center gap-2 hover:text-cyan-300 transition-colors">
+                <Phone className="w-4 h-4" />
+                <span>+91-755-XXXXXXX</span>
+              </a>
+              <a href="mailto:info@vividh2osolutions.com" className="flex items-center gap-2 hover:text-cyan-300 transition-colors">
+                <Mail className="w-4 h-4" />
+                <span>info@vividh2osolutions.com</span>
+              </a>
             </div>
-            <div className="hidden sm:block">
-              <span className="font-heading font-bold text-lg text-[#0f172a]">Vivid H2O</span>
-              <span className="block text-xs text-slate-500 -mt-1">Solutions</span>
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4" />
+              <span>Bhopal - 402026, MP, India</span>
             </div>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8" data-testid="desktop-nav">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`nav-link text-sm font-medium transition-colors ${
-                  isActive(link.path)
-                    ? "text-[#0f172a]"
-                    : "text-slate-600 hover:text-[#0f172a]"
-                }`}
-                data-testid={`nav-${link.name.toLowerCase()}`}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
-
-          {/* CTA Button */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+917550000000" className="flex items-center gap-2 text-sm text-slate-600">
-              <Phone className="w-4 h-4" />
-              <span>+91-755-XXXXXXX</span>
-            </a>
-            <Link to="/contact">
-              <Button className="bg-[#06b6d4] hover:bg-[#0891b2] text-white" data-testid="get-quote-btn">
-                Get Quote
-              </Button>
-            </Link>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-            data-testid="mobile-menu-btn"
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
         </div>
+      </div>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="lg:hidden py-4 border-t border-slate-200" data-testid="mobile-nav">
-            <nav className="flex flex-col gap-2">
+      {/* Main Navbar */}
+      <header 
+        className={`sticky top-0 z-50 bg-white transition-all duration-300 ${
+          isScrolled ? "shadow-lg" : "shadow-sm"
+        }`} 
+        data-testid="navbar"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            {/* Logo */}
+            <Link to="/" className="flex items-center gap-3" data-testid="logo">
+              <div className="w-12 h-12 bg-gradient-to-br from-[#0d47a1] to-[#1976d2] rounded-lg flex items-center justify-center shadow-lg">
+                <Droplets className="w-7 h-7 text-white" />
+              </div>
+              <div>
+                <span className="font-heading font-bold text-xl text-[#0d47a1] block leading-tight">Vivid H2O</span>
+                <span className="text-xs text-gray-500 font-medium">Solutions</span>
+              </div>
+            </Link>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center gap-1" data-testid="desktop-nav">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 text-sm font-medium transition-all rounded-md ${
                     isActive(link.path)
-                      ? "bg-slate-100 text-[#0f172a]"
-                      : "text-slate-600 hover:bg-slate-50"
+                      ? "text-[#0d47a1] bg-blue-50"
+                      : "text-gray-700 hover:text-[#0d47a1] hover:bg-blue-50"
                   }`}
-                  onClick={() => setIsOpen(false)}
+                  data-testid={`nav-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
                 >
                   {link.name}
                 </Link>
               ))}
-              <Link to="/contact" onClick={() => setIsOpen(false)}>
-                <Button className="w-full mt-2 bg-[#06b6d4] hover:bg-[#0891b2] text-white">
-                  Get Quote
+            </nav>
+
+            {/* CTA Button */}
+            <div className="hidden lg:flex items-center gap-3">
+              <Link to="/contact">
+                <Button className="bg-gradient-to-r from-[#0d47a1] to-[#1976d2] hover:from-[#0a3d8f] hover:to-[#1565c0] text-white shadow-lg" data-testid="get-quote-btn">
+                  Get Free Quote
                 </Button>
               </Link>
-            </nav>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="lg:hidden p-2 text-gray-700"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+              data-testid="mobile-menu-btn"
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
           </div>
-        )}
-      </div>
-    </header>
+
+          {/* Mobile Navigation */}
+          {isOpen && (
+            <div className="lg:hidden py-4 border-t border-gray-100" data-testid="mobile-nav">
+              <nav className="flex flex-col gap-1">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                      isActive(link.path)
+                        ? "bg-blue-50 text-[#0d47a1]"
+                        : "text-gray-700 hover:bg-gray-50"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+                <div className="px-4 py-3 space-y-2 border-t border-gray-100 mt-2">
+                  <a href="tel:+917550000000" className="flex items-center gap-2 text-sm text-gray-600">
+                    <Phone className="w-4 h-4 text-[#0d47a1]" />
+                    +91-755-XXXXXXX
+                  </a>
+                  <a href="mailto:info@vividh2osolutions.com" className="flex items-center gap-2 text-sm text-gray-600">
+                    <Mail className="w-4 h-4 text-[#0d47a1]" />
+                    info@vividh2osolutions.com
+                  </a>
+                </div>
+                <Link to="/contact" onClick={() => setIsOpen(false)} className="mx-4 mt-2">
+                  <Button className="w-full bg-gradient-to-r from-[#0d47a1] to-[#1976d2] text-white">
+                    Get Free Quote
+                  </Button>
+                </Link>
+              </nav>
+            </div>
+          )}
+        </div>
+      </header>
+    </>
   );
 };
 
