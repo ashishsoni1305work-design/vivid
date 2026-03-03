@@ -9,6 +9,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import CataloguePage from "./pages/CataloguePage";
 
 // Components
 import Navbar from "./components/Navbar";
@@ -28,6 +29,7 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/catalogue" element={<CataloguePage />} />
           </Routes>
         </main>
         <Footer />
