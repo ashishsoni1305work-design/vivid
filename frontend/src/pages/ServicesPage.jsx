@@ -13,7 +13,8 @@ import {
   Phone,
   Settings,
   Truck,
-  Shield
+  Shield,
+  Target
 } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
@@ -26,7 +27,8 @@ const iconMap = {
   FileCheck: FileCheck,
   TestTube: TestTube,
   RefreshCw: RefreshCw,
-  TrendingUp: TrendingUp
+  TrendingUp: TrendingUp,
+  Target: Target
 };
 
 const ServicesPage = () => {
