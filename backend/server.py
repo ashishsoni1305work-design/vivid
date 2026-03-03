@@ -678,7 +678,7 @@ SERVICES_DATA = [
         "short_description": "Complete water treatment solutions and installations",
         "icon": "Wrench",
         "features": ["System design & engineering", "Equipment supply", "Installation & commissioning", "Operator training", "Performance guarantee"],
-        "image_url": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600"
+        "image_url": "/services/water-treatment.png"
     },
     {
         "id": "serv-2",
@@ -688,7 +688,7 @@ SERVICES_DATA = [
         "short_description": "ETP, STP design, installation and operation services",
         "icon": "RefreshCw",
         "features": ["ETP/STP design", "ZLD solutions", "CPCB compliance", "Sludge management", "Treated water recycling"],
-        "image_url": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600"
+        "image_url": "/services/wastewater.png"
     },
     {
         "id": "serv-3",
@@ -698,7 +698,7 @@ SERVICES_DATA = [
         "short_description": "Complete water resource management solutions",
         "icon": "TrendingUp",
         "features": ["Water audit", "Conservation planning", "Rainwater harvesting", "Groundwater recharge", "Water recycling systems"],
-        "image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600"
+        "image_url": "/services/water-management.png"
     },
     {
         "id": "serv-4",
@@ -708,7 +708,7 @@ SERVICES_DATA = [
         "short_description": "Complete maintenance packages for all equipment",
         "icon": "FileCheck",
         "features": ["Quarterly service visits", "Membrane cleaning", "Chemical supply", "24/7 support", "Spare parts discount"],
-        "image_url": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600"
+        "image_url": "/services/amc.png"
     },
     {
         "id": "serv-5",
@@ -718,7 +718,7 @@ SERVICES_DATA = [
         "short_description": "Comprehensive water testing and analysis",
         "icon": "TestTube",
         "features": ["Physical parameters", "Chemical analysis", "Microbiological testing", "Heavy metals", "Detailed reports"],
-        "image_url": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600"
+        "image_url": "/services/water-testing.png"
     },
     {
         "id": "serv-6",
@@ -728,7 +728,7 @@ SERVICES_DATA = [
         "short_description": "Expert technical consultation for water projects",
         "icon": "Target",
         "features": ["Feasibility studies", "Technology selection", "Cost estimation", "Regulatory compliance", "Project planning"],
-        "image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600"
+        "image_url": "/services/consultation.png"
     },
     {
         "id": "serv-7",
@@ -738,7 +738,7 @@ SERVICES_DATA = [
         "short_description": "Professional plant installation services",
         "icon": "Wrench",
         "features": ["Site survey", "Civil work", "Piping & electrical", "Commissioning", "Training"],
-        "image_url": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600"
+        "image_url": "/services/installation.png"
     },
     {
         "id": "serv-8",
@@ -748,7 +748,7 @@ SERVICES_DATA = [
         "short_description": "Modernize your existing treatment plants",
         "icon": "TrendingUp",
         "features": ["PLC/SCADA automation", "Capacity upgrade", "Energy optimization", "Remote monitoring", "Performance guarantee"],
-        "image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600"
+        "image_url": "/services/upgradation.png"
     }
 ]
 
