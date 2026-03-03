@@ -110,7 +110,7 @@ PRODUCTS_DATA = [
             "Warranty": "1 Year"
         },
         "price_range": "₹1,50,000 - ₹2,50,000",
-        "image_url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600",
+        "image_url": "/products/prod-1.png",
         "features": ["High TDS rejection", "Low power consumption", "Automatic operation", "SS 304 frame", "Premium membranes"],
         "is_featured": True
     },
@@ -131,7 +131,7 @@ PRODUCTS_DATA = [
             "Warranty": "1 Year"
         },
         "price_range": "₹3,00,000 - ₹4,50,000",
-        "image_url": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600",
+        "image_url": "/products/prod-2.png",
         "features": ["Fully automatic PLC control", "High recovery rate", "Energy efficient", "Remote monitoring capable", "Anti-scaling system"],
         "is_featured": True
     },
@@ -152,7 +152,7 @@ PRODUCTS_DATA = [
             "Warranty": "1 Year"
         },
         "price_range": "₹35,000 - ₹55,000",
-        "image_url": "https://images.unsplash.com/photo-1562016600-ece12b8f5428?w=600",
+        "image_url": "/products/prod-3.png",
         "features": ["Compact design", "Easy installation", "Low maintenance", "Quality membranes", "Pre-filter included"],
         "is_featured": False
     },
@@ -172,7 +172,7 @@ PRODUCTS_DATA = [
             "Warranty": "1 Year"
         },
         "price_range": "₹5,00,000 - ₹50,00,000",
-        "image_url": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600",
+        "image_url": "/products/prod-4.png",
         "features": ["CPCB compliant", "Low sludge generation", "Odor control", "Automated dosing", "Real-time monitoring"],
         "is_featured": True
     },
@@ -193,7 +193,7 @@ PRODUCTS_DATA = [
             "Automation": "Fully Automatic"
         },
         "price_range": "₹8,00,000 - ₹15,00,000",
-        "image_url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600",
+        "image_url": "/products/prod-5.png",
         "features": ["Low footprint", "Reusable treated water", "Low power consumption", "Minimal odor", "Easy operation"],
         "is_featured": False
     },
@@ -213,7 +213,7 @@ PRODUCTS_DATA = [
             "Warranty": "1 Year"
         },
         "price_range": "₹50,000 - ₹3,00,000",
-        "image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600",
+        "image_url": "/products/prod-6.png",
         "features": ["Automatic regeneration", "Low salt consumption", "Long resin life", "Compact design", "Easy maintenance"],
         "is_featured": False
     },
@@ -233,7 +233,7 @@ PRODUCTS_DATA = [
             "Power": "3 Phase, 440V"
         },
         "price_range": "₹55,000 - ₹10,00,000",
-        "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+        "image_url": "/products/prod-7.png",
         "features": ["Energy efficient", "Digital temperature control", "Low noise operation", "Eco-friendly refrigerant", "Compact footprint"],
         "is_featured": False
     },
@@ -253,7 +253,7 @@ PRODUCTS_DATA = [
             "Warranty": "1 Year"
         },
         "price_range": "₹25,000 - ₹75,000",
-        "image_url": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600",
+        "image_url": "/products/prod-8.png",
         "features": ["Food grade SS", "Fast cooling", "Easy cleaning", "Durable construction", "Low maintenance"],
         "is_featured": False
     },
@@ -273,7 +273,7 @@ PRODUCTS_DATA = [
             "Automation": "Manual/Auto"
         },
         "price_range": "₹1,00,000 - ₹8,00,000",
-        "image_url": "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=600",
+        "image_url": "/products/prod-9.png",
         "features": ["High purity output", "Efficient regeneration", "Long resin life", "Modular design", "Easy operation"],
         "is_featured": False
     },
@@ -293,7 +293,7 @@ PRODUCTS_DATA = [
             "Automation": "Fully Automatic"
         },
         "price_range": "₹2,00,000 - ₹10,00,000",
-        "image_url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=600",
+        "image_url": "/products/prod-10.png",
         "features": ["Crystal clear water", "Automatic chemical dosing", "Energy efficient pumps", "Low maintenance", "Complete package"],
         "is_featured": False
     }
