@@ -56,19 +56,19 @@ const HomePage = () => {
 
   const heroSlides = [
     {
-      image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600",
+      image: "/banners/banner-1.png",
       title: "Industrial RO Plants",
       subtitle: "High-capacity reverse osmosis systems for industries"
     },
     {
-      image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1600",
-      title: "Effluent Treatment Plants",
-      subtitle: "CPCB compliant wastewater treatment solutions"
+      image: "/banners/banner-2.png",
+      title: "Water Treatment Solutions",
+      subtitle: "Complete water purification systems for all needs"
     },
     {
-      image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1600",
-      title: "Water Treatment Solutions",
-      subtitle: "Complete water purification systems"
+      image: "/banners/banner-3.png",
+      title: "Effluent & Sewage Treatment",
+      subtitle: "CPCB compliant wastewater treatment solutions"
     }
   ];
 
