@@ -54,7 +54,8 @@ const AboutPage = () => {
     { year: "2016", title: "Expanded Product Line", description: "Added ETP and STP" },
     { year: "2018", title: "100+ Installations", description: "Major milestone achieved" },
     { year: "2020", title: "Regional Expansion", description: "Pan-MP operations" },
-    { year: "2023", title: "500+ Projects", description: "Industry leader status" }
+    { year: "2023", title: "500+ Projects", description: "Industry leader status" },
+    { year: "2025", title: "Automation & SCADA", description: "Advanced technology integration" }
   ];
 
   return (
