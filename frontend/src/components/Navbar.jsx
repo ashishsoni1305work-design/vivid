@@ -68,7 +68,7 @@ const Navbar = () => {
                 <Droplets className="w-7 h-7 text-white" />
               </div>
               <div>
-                <span className="font-heading font-bold text-xl text-[#0d47a1] block leading-tight">Vivid H2O</span>
+                <span className="font-heading font-bold text-xl text-[#0d47a1] block leading-tight">Vivid H2O<sup className="text-xs">®</sup></span>
                 <span className="text-xs text-gray-500 font-medium">Solutions</span>
               </div>
             </Link>

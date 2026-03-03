@@ -31,7 +31,7 @@ const Footer = () => {
                 <Droplets className="w-7 h-7 text-cyan-300" />
               </div>
               <div>
-                <span className="font-heading font-bold text-xl block leading-tight">Vivid H2O</span>
+                <span className="font-heading font-bold text-xl block leading-tight">Vivid H2O<sup className="text-xs">®</sup></span>
                 <span className="text-xs text-blue-200">Solutions</span>
               </div>
             </div>
@@ -134,7 +134,7 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-blue-200 text-sm">
-            © {currentYear} Vivid H2O Solutions. All rights reserved.
+            © {currentYear} Vivid H2O® Solutions. All rights reserved.
           </p>
           <p className="text-blue-200 text-sm">
             GST: 23CCQPS3136K1Z7 | Est. 2014
