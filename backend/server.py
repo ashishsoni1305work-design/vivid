@@ -341,6 +341,350 @@ PRODUCTS_DATA = [
         "image_url": "/products/control-panel.png",
         "features": ["PLC automation", "Touchscreen HMI", "Remote monitoring", "Safety interlocks", "Energy monitoring"],
         "is_featured": False
+    },
+    {
+        "id": "prod-14",
+        "name": "Mineral Water Plant",
+        "slug": "mineral-water-plant",
+        "category": "RO Plants",
+        "description": "Complete mineral water production plant with multi-stage purification including RO, UV, and ozone treatment. Suitable for packaged drinking water business with BIS compliance.",
+        "short_description": "Packaged drinking water production system",
+        "specifications": {
+            "Purification": "RO + UV + Ozone",
+            "Compliance": "BIS/IS 14543",
+            "Material": "SS 304/316",
+            "Automation": "Fully Automatic",
+            "Packaging": "Jar/Bottle/Pouch",
+            "Warranty": "1 Year"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/mineral-water-plant.png",
+        "features": ["BIS compliant", "Multi-stage purification", "Auto packaging ready", "Low operating cost", "High production capacity"],
+        "is_featured": True
+    },
+    {
+        "id": "prod-15",
+        "name": "Ultrafiltration (UF) System",
+        "slug": "ultrafiltration-system",
+        "category": "Treatment Plants",
+        "description": "Industrial ultrafiltration system with hollow fiber membrane technology. Removes bacteria, viruses, and suspended solids for pre-treatment to RO or as standalone purification.",
+        "short_description": "Hollow fiber membrane UF purification system",
+        "specifications": {
+            "Membrane": "Hollow Fiber PVDF/PES",
+            "Pore Size": "0.01 - 0.1 micron",
+            "Recovery": "90-95%",
+            "Material": "SS/PVC Housing",
+            "Backwash": "Automatic",
+            "Warranty": "1 Year"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/ultrafiltration-system.png",
+        "features": ["99.99% bacteria removal", "High recovery rate", "Auto backwash", "Low chemical usage", "Compact modular design"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-16",
+        "name": "Rain Water Harvesting Plant",
+        "slug": "rain-water-harvesting-plant",
+        "category": "Treatment Plants",
+        "description": "Complete rainwater harvesting system with collection, filtration, storage, and groundwater recharge. Helps conserve water resources and comply with government regulations.",
+        "short_description": "Rainwater collection and recharge system",
+        "specifications": {
+            "Components": "Filter/Storage/Recharge Well",
+            "Filtration": "Sand + Carbon Filter",
+            "Storage": "Underground/Overhead Tank",
+            "Material": "PVC/FRP/RCC",
+            "Compliance": "Government Norms"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/rainwater-harvesting.png",
+        "features": ["Water conservation", "Ground water recharge", "Government compliant", "Low maintenance", "Custom design"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-17",
+        "name": "Cooling Tower",
+        "slug": "cooling-tower",
+        "category": "Coolers & Chillers",
+        "description": "High-efficiency industrial cooling tower for process water cooling. FRP construction with low noise fans and energy-efficient design for HVAC and industrial applications.",
+        "short_description": "Industrial FRP cooling tower system",
+        "specifications": {
+            "Type": "Induced Draft/Cross Flow",
+            "Material": "FRP/Timber/RCC",
+            "Fill Type": "PVC/PP Honeycomb",
+            "Fan": "FRP Blade/Axial",
+            "Motor": "TEFC Flameproof"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/cooling-tower.png",
+        "features": ["Energy efficient", "Low noise operation", "Corrosion resistant FRP", "Easy maintenance", "Long service life"],
+        "is_featured": True
+    },
+    {
+        "id": "prod-18",
+        "name": "Compost Machine",
+        "slug": "compost-machine",
+        "category": "Waste Management",
+        "description": "Automatic organic waste composting machine for converting food waste and biodegradable waste into nutrient-rich compost. Eco-friendly solution for restaurants, hotels, and institutions.",
+        "short_description": "Automatic organic waste composting system",
+        "specifications": {
+            "Type": "Rotating Drum",
+            "Power": "Single/Three Phase",
+            "Material": "MS/SS Construction",
+            "Process Time": "24-48 Hours",
+            "Output": "Nutrient-rich Compost"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/compost-machine.png",
+        "features": ["Zero waste solution", "Automatic operation", "Odor free process", "Compact design", "Low power consumption"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-19",
+        "name": "Heat Pump",
+        "slug": "heat-pump",
+        "category": "Waste Management",
+        "description": "Energy-efficient heat pump water heater for commercial and industrial hot water needs. Uses ambient air energy for heating, reducing electricity consumption by up to 70%.",
+        "short_description": "Energy efficient water heating system",
+        "specifications": {
+            "COP": "3.5 - 5.0",
+            "Temperature": "Up to 65°C",
+            "Refrigerant": "R410A/R134a",
+            "Material": "SS 304 Tank",
+            "Power Saving": "Up to 70%"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/heat-pump.png",
+        "features": ["70% power saving", "Eco-friendly", "All weather operation", "Digital controls", "Long life span"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-20",
+        "name": "Hydropneumatic System",
+        "slug": "hydropneumatic-system",
+        "category": "Pumps & Equipment",
+        "description": "Hydropneumatic pressure booster system for maintaining constant water pressure in high-rise buildings, hospitals, and industrial plants. Automatic on/off with pressure sensors.",
+        "short_description": "Automatic water pressure booster system",
+        "specifications": {
+            "Type": "Variable/Constant Speed",
+            "Pumps": "SS Multistage Centrifugal",
+            "Pressure": "Up to 10 Bar",
+            "Control": "PLC/Pressure Switch",
+            "Material": "SS 304/316"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/hydropneumatic-system.png",
+        "features": ["Constant pressure", "Auto operation", "Energy efficient VFD", "Low noise", "Compact skid mounted"],
+        "is_featured": True
+    },
+    {
+        "id": "prod-21",
+        "name": "Filter Press",
+        "slug": "filter-press",
+        "category": "Pumps & Equipment",
+        "description": "Industrial filter press for sludge dewatering in ETP/STP plants. Hydraulic operation with high pressure filtration for maximum moisture removal from sludge.",
+        "short_description": "Sludge dewatering filter press system",
+        "specifications": {
+            "Type": "Plate & Frame/Membrane",
+            "Operation": "Hydraulic/Manual",
+            "Plate Material": "PP/Cast Iron",
+            "Pressure": "Up to 16 Bar",
+            "Cloth": "PP/Nylon Filter Cloth"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/filter-press.png",
+        "features": ["High dewatering efficiency", "Low moisture cake", "Automatic operation", "Durable construction", "Easy cloth replacement"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-22",
+        "name": "Dosing Pump",
+        "slug": "dosing-pump",
+        "category": "Pumps & Equipment",
+        "description": "Precision chemical dosing pump for accurate chemical injection in water treatment processes. Diaphragm type with digital flow control for chlorine, alum, and polymer dosing.",
+        "short_description": "Precision chemical metering pump",
+        "specifications": {
+            "Type": "Diaphragm/Plunger",
+            "Flow Range": "0.1 - 500 LPH",
+            "Pressure": "Up to 10 Bar",
+            "Control": "Manual/Auto 4-20mA",
+            "Material": "PP/SS/PVDF Head"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/dosing-pump.png",
+        "features": ["Accurate dosing", "Digital flow control", "Chemical resistant", "Low maintenance", "Auto stroke adjustment"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-23",
+        "name": "Ozonator",
+        "slug": "ozonator",
+        "category": "Pumps & Equipment",
+        "description": "Industrial ozone generator for water disinfection without chemicals. Effectively eliminates bacteria, viruses, and odor from water for drinking water and swimming pool applications.",
+        "short_description": "Chemical-free water disinfection system",
+        "specifications": {
+            "Ozone Output": "5g - 100g/hr",
+            "Feed Gas": "Air/Oxygen",
+            "Generator": "Corona Discharge",
+            "Material": "SS 316 Contact Tank",
+            "Control": "Digital Timer/PLC"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/ozonator.png",
+        "features": ["Chemical free disinfection", "Kills 99.9% bacteria", "No residual chemicals", "Low operating cost", "Automatic operation"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-24",
+        "name": "Oil Skimmer",
+        "slug": "oil-skimmer",
+        "category": "Pumps & Equipment",
+        "description": "Industrial oil skimmer for removing floating oil and grease from effluent water. Essential pre-treatment equipment for ETP in automotive, food, and manufacturing industries.",
+        "short_description": "Floating oil and grease removal system",
+        "specifications": {
+            "Type": "Belt/Disc/Tube",
+            "Capacity": "Up to 100 L/hr oil removal",
+            "Material": "SS 304/316",
+            "Motor": "Geared Motor",
+            "Operation": "Continuous"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/oil-skimmer.png",
+        "features": ["Continuous operation", "High oil recovery", "Low maintenance", "Corrosion resistant", "Easy installation"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-25",
+        "name": "Agitator",
+        "slug": "agitator",
+        "category": "Pumps & Equipment",
+        "description": "Industrial agitator and mixer for chemical mixing in water treatment tanks. Available in various impeller designs for different mixing requirements and tank sizes.",
+        "short_description": "Chemical mixing and agitation system",
+        "specifications": {
+            "Type": "Propeller/Turbine/Paddle",
+            "Material": "SS 304/316/PP",
+            "Motor": "0.5 HP - 20 HP",
+            "Speed": "Variable RPM",
+            "Mounting": "Top/Side Entry"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/agitator.png",
+        "features": ["Efficient mixing", "Variable speed", "Corrosion resistant", "Low vibration", "Easy maintenance"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-26",
+        "name": "Water ATM",
+        "slug": "water-atm",
+        "category": "Water Dispensing",
+        "description": "Smart water ATM vending machine with RO purification and digital payment system. Provides safe drinking water access to communities with coin, card, and UPI payment options.",
+        "short_description": "Smart water vending machine with RO purification",
+        "specifications": {
+            "Purification": "RO + UV + UF",
+            "Payment": "Coin/Card/UPI",
+            "Display": "LCD Touchscreen",
+            "Storage": "500-1000L SS Tank",
+            "Monitoring": "IoT/GSM Remote"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/water-atm.png",
+        "features": ["Digital payment", "Pure RO water", "Remote monitoring", "Solar compatible", "Revenue generating"],
+        "is_featured": True
+    },
+    {
+        "id": "prod-27",
+        "name": "Water Dispenser",
+        "slug": "water-dispenser",
+        "category": "Water Dispensing",
+        "description": "Commercial hot and cold water dispenser for offices, schools, and public places. Stainless steel construction with energy-efficient compressor cooling system.",
+        "short_description": "Hot and cold water dispensing unit",
+        "specifications": {
+            "Type": "Floor Standing/Table Top",
+            "Cooling": "Compressor Based",
+            "Hot Water": "Up to 90°C",
+            "Cold Water": "5-10°C",
+            "Material": "SS 304 Body"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/water-dispenser.png",
+        "features": ["Hot & cold water", "Energy efficient", "Hygienic SS body", "Child safety lock", "Easy maintenance"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-28",
+        "name": "Water Pouch Packing Machine",
+        "slug": "water-pouch-packing-machine",
+        "category": "Water Dispensing",
+        "description": "Automatic water pouch packing machine for packaged drinking water business. Form-fill-seal technology with UV sterilization and accurate volumetric filling.",
+        "short_description": "Automatic water sachet packaging machine",
+        "specifications": {
+            "Type": "Form Fill Seal",
+            "Speed": "1500-2500 pouches/hr",
+            "Volume": "100-500 ml",
+            "Sterilization": "UV Inline",
+            "Material": "SS 304 Contact Parts"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/pouch-packing-machine.png",
+        "features": ["High speed packaging", "Accurate filling", "UV sterilized", "Low wastage", "Easy operation"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-29",
+        "name": "AC/DC Drives",
+        "slug": "ac-dc-drives",
+        "category": "Automation",
+        "description": "Variable frequency AC/DC drives for motor speed control in pumps, blowers, and compressors. Provides energy savings up to 40% with soft start and precise speed regulation.",
+        "short_description": "Variable frequency motor speed controllers",
+        "specifications": {
+            "Type": "AC VFD/DC Drive",
+            "Range": "0.5 HP - 500 HP",
+            "Input": "Single/Three Phase",
+            "Communication": "Modbus/Profibus",
+            "Protection": "IP20/IP55"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/ac-dc-drives.png",
+        "features": ["40% energy saving", "Soft start/stop", "Speed regulation", "Built-in protection", "Remote monitoring"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-30",
+        "name": "RO Membranes & Filter Housing",
+        "slug": "ro-membranes-filter-housing",
+        "category": "Accessories",
+        "description": "High-quality RO membranes, filter housings, cartridge filters, UV lamps, FRP vessels, and multiport valves. Genuine replacement parts and accessories for all water treatment systems.",
+        "short_description": "RO membranes, filters, vessels & spare parts",
+        "specifications": {
+            "Membranes": "4040/8040 TFC",
+            "Filters": "PP/CTO/GAC Cartridges",
+            "UV": "SS Chamber + Philips Lamp",
+            "Vessels": "FRP 1054/1354/1665",
+            "Valves": "Manual/Auto Multiport"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/accessories-membranes.png",
+        "features": ["Genuine quality", "All brands available", "Bulk pricing", "Fast delivery", "Technical support"],
+        "is_featured": False
+    },
+    {
+        "id": "prod-31",
+        "name": "Water Treatment Media & Chemicals",
+        "slug": "water-treatment-media-chemicals",
+        "category": "Accessories",
+        "description": "Complete range of water treatment media including activated carbon, softener resin, MBBR media, tube settler media, and water treatment chemicals like antiscalant, pH boosters, and boiler chemicals.",
+        "short_description": "Filter media, resins, and treatment chemicals",
+        "specifications": {
+            "Media": "Carbon/Resin/MBBR/Tube Settler",
+            "Chemicals": "Antiscalant/pH Booster/Chlorine",
+            "Boiler Chemicals": "Thermax Maxtreat Series",
+            "Packaging": "25-50 Kg Bags/Drums",
+            "Quality": "Industrial Grade"
+        },
+        "price_range": "On Request",
+        "image_url": "/products/accessories-media-chemicals.png",
+        "features": ["Premium quality", "All media types", "Boiler chemicals", "Competitive pricing", "Bulk supply"],
+        "is_featured": False
     }
 ]
 
