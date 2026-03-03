@@ -13,6 +13,7 @@ import ContactPage from "./pages/ContactPage";
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import WhatsAppFloat from "./components/WhatsAppFloat";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <WhatsAppFloat />
         <Toaster position="top-right" richColors />
       </BrowserRouter>
     </div>
