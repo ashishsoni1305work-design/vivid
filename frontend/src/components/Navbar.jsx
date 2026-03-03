@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Droplets, Phone, Mail, MapPin, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
@@ -64,13 +64,11 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3" data-testid="logo">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#0d47a1] to-[#1976d2] rounded-lg flex items-center justify-center shadow-lg">
-                <Droplets className="w-7 h-7 text-white" />
-              </div>
-              <div>
-                <span className="font-heading font-bold text-xl text-[#0d47a1] block leading-tight">Vivid H2O<sup className="text-xs">®</sup></span>
-                <span className="text-xs text-gray-500 font-medium">Solutions</span>
-              </div>
+              <img 
+                src="/logo-hd.png" 
+                alt="VIVID - We restore purity" 
+                className="h-14 w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}

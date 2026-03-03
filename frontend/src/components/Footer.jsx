@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Droplets, MapPin, Phone, Mail, Clock, ChevronRight } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ChevronRight } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,14 +26,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
-                <Droplets className="w-7 h-7 text-cyan-300" />
-              </div>
-              <div>
-                <span className="font-heading font-bold text-xl block leading-tight">Vivid H2O<sup className="text-xs">®</sup></span>
-                <span className="text-xs text-blue-200">Solutions</span>
-              </div>
+            <div className="mb-6">
+              <img 
+                src="/logo-hd.png" 
+                alt="VIVID - We restore purity" 
+                className="h-16 w-auto bg-white rounded-lg p-2"
+              />
             </div>
             <p className="text-blue-100 text-sm leading-relaxed mb-6">
               Leading manufacturer and supplier of industrial water treatment solutions. 
@@ -134,7 +132,7 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-blue-200 text-sm">
-            © {currentYear} Vivid H2O® Solutions. All rights reserved.
+            © {currentYear} VIVID®. All rights reserved.
           </p>
           <p className="text-blue-200 text-sm">
             GST: 23CCQPS3136K1Z7 | Est. 2014
