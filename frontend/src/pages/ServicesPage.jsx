@@ -169,7 +169,7 @@ const ServicesPage = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800"
+                src="/services/amc-highlight.png"
                 alt="Service Engineer"
                 className="rounded-xl shadow-2xl"
               />
