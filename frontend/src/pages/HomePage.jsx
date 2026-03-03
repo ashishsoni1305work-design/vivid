@@ -206,7 +206,7 @@ const HomePage = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800"
+                src="/images/about-team.png"
                 alt="About Vivid H2O Solutions"
                 className="rounded-xl shadow-2xl"
               />
