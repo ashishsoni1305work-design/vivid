@@ -592,25 +592,6 @@ PRODUCTS_DATA = [
         "is_featured": True
     },
     {
-        "id": "prod-27",
-        "name": "Water Dispenser",
-        "slug": "water-dispenser",
-        "category": "Water Dispensing",
-        "description": "Commercial hot and cold water dispenser for offices, schools, and public places. Stainless steel construction with energy-efficient compressor cooling system.",
-        "short_description": "Hot and cold water dispensing unit",
-        "specifications": {
-            "Type": "Floor Standing/Table Top",
-            "Cooling": "Compressor Based",
-            "Hot Water": "Up to 90°C",
-            "Cold Water": "5-10°C",
-            "Material": "SS 304 Body"
-        },
-        "price_range": "On Request",
-        "image_url": "/products/water-dispenser.png",
-        "features": ["Hot & cold water", "Energy efficient", "Hygienic SS body", "Child safety lock", "Easy maintenance"],
-        "is_featured": False
-    },
-    {
         "id": "prod-28",
         "name": "Water Pouch Packing Machine",
         "slug": "water-pouch-packing-machine",
